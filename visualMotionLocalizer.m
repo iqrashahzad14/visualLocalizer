@@ -1,6 +1,8 @@
 % (C) Copyright 2018 Mohamed Rezk
 % (C) Copyright 2020 CPP visual motion localizer developpers
 
+% Adapted by Iqra for repeated targets task
+
 % Direction 0 dots move right
 % Direction 180 dots move left
 % Direction 90-up, 270-down

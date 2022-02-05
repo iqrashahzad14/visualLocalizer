@@ -55,10 +55,10 @@ function [cfg] = setParameters()
 
     cfg.design.motionType = 'translation';
     cfg.design.motionDirections = [180 90]; %0:right 180:left 90:up 270:down
-    cfg.design.names = {'motion'; 'static'};
+    cfg.design.names = {'static'; 'motion'};
 
     cfg.design.nbRepetitions = 6; %12 BLOCKS
-    cfg.design.nbEventsPerBlock = 16; % DO NOT CHANGE
+    cfg.design.nbEventsPerBlock = 12; % DO NOT CHANGE
 
     %% Timing
 
@@ -75,7 +75,7 @@ function [cfg] = setParameters()
     cfg.timing.IBI = [5.9008    6.6965    6.0444    6.9093    6.2273    6.0206    5.8399    5.2143    6.2263    5.9364    5.4057    0 ];
     %r = a + (b-a).*rand(N,1); r = 5 + (7-5)*rand(1,11);
     % Time between events in secs
-    cfg.timing.ISI = 1;%0.5;
+    cfg.timing.ISI = 0.5;
     % Number of seconds before the motion stimuli are presented
     cfg.timing.onsetDelay = 5.25;
     % Number of seconds after the end all the stimuli before ending the run
