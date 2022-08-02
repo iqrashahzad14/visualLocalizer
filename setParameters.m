@@ -55,7 +55,7 @@ function [cfg] = setParameters()
 
     cfg.design.motionType = 'translation';
     cfg.design.motionDirections = [180 90]; %0:right 180:left 90:up 270:down
-    cfg.design.names = {'static'; 'motion'};
+    cfg.design.names = {'motion';'static' };
 
     cfg.design.nbRepetitions = 6; %12 BLOCKS
     cfg.design.nbEventsPerBlock = 12; % DO NOT CHANGE
@@ -123,7 +123,7 @@ function [cfg] = setParameters()
 
     %% Task(s)
 
-    cfg.task.name = 'visual localizer';
+    cfg.task.name = 'visual localizer2';
 
     % Instruction
     cfg.task.instruction = 'Detect the repeated stimulus\n \n\n';
